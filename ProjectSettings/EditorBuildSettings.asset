@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/InteriorCityHall.unity
+    guid: 131dd8bf1381644f1bc01f00ff0550d5
+  - enabled: 1
+    path: Assets/Scenes/ExtendedCity.unity
+    guid: 1332875d3e8244b6c8dc9ca2788a5857
+  - enabled: 1
+    path: Assets/Scenes/PoliceStation.unity
+    guid: dd01cdeaf00b14a07b772534a37d8a3d
+  - enabled: 1
+    path: Assets/Scenes/RegisteryOfficeLobby.unity
+    guid: b7aed7a6b6a574684bd568b7724db854
+  - enabled: 1
+    path: Assets/Scenes/MARInteriorTeleport.unity
+    guid: 107a7d7b395274d559857a142d37decc
+  - enabled: 1
+    path: Assets/Scenes/RAMTeleportArea.unity
+    guid: c0a620deed56d48f6ba251ed09c2cee1
+  - enabled: 1
+    path: Assets/Scenes/InteriorRAM.unity
+    guid: 89dd00c366f4c43729567eaac80ed124
+  m_configObjects: {}
