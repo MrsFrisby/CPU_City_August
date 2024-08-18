@@ -12,14 +12,32 @@ EditorBuildSettings:
     path: Assets/Scenes/InteriorCityHall.unity
     guid: 131dd8bf1381644f1bc01f00ff0550d5
   - enabled: 1
-    path: Assets/Scenes/ExtendedCity.unity
-    guid: 1332875d3e8244b6c8dc9ca2788a5857
+    path: Assets/Scenes/ExteriorCityHall.unity
+    guid: a70b4c7f1093c4a8399d6ef435a1205f
+  - enabled: 1
+    path: Assets/Scenes/ExtCity_GreenBus_CUtoPC.unity
+    guid: f871856a8eba34d8db056ca7c5325809
+  - enabled: 1
+    path: Assets/Scenes/ExteriorPoliceStationArrival.unity
+    guid: 2dd540b681bda4e36b7ca84490ad9f4d
   - enabled: 1
     path: Assets/Scenes/PoliceStation.unity
     guid: dd01cdeaf00b14a07b772534a37d8a3d
   - enabled: 1
-    path: Assets/Scenes/RegisteryOfficeLobby.unity
+    path: Assets/Scenes/ExteriorPoliceStationDepart.unity
+    guid: b67f7da4373554a78ab789b6c914e8f5
+  - enabled: 1
+    path: Assets/Scenes/ExteriorBlueBusPCtoRegOffices.unity
+    guid: 0fdae3844a01445e78fb14708a7de33f
+  - enabled: 1
+    path: Assets/Scenes/ExteriorRegistryOffice.unity
+    guid: 6657b0dc437a64a89839291c4af7fe7e
+  - enabled: 1
+    path: Assets/Scenes/RegistryOfficeLobby.unity
     guid: b7aed7a6b6a574684bd568b7724db854
+  - enabled: 1
+    path: Assets/Scenes/InteriorElevator.unity
+    guid: a8f4e15d3a01446b5ab883ee19618cc1
   - enabled: 1
     path: Assets/Scenes/MARInteriorTeleport.unity
     guid: 107a7d7b395274d559857a142d37decc
@@ -29,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InteriorRAM.unity
     guid: 89dd00c366f4c43729567eaac80ed124
+  - enabled: 1
+    path: Assets/Scenes/UnityDemoUI.unity
+    guid: e7b118403c74e49f89d038d8a6ba9e2b
   m_configObjects: {}

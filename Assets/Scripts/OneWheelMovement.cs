@@ -43,6 +43,7 @@ public class OneWheelMovement : MonoBehaviour
         //subscribe to input events
         playerActions.Player.Jump.started += DoJump;
         playerActions.Player.Attack.started += DoAttack;
+        playerActions.Player.PressButton.started += DoPressButton;
         move = playerActions.Player.Move; 
         playerActions.Player.Enable();
     }
@@ -52,6 +53,7 @@ public class OneWheelMovement : MonoBehaviour
         //unsubscribe
         playerActions.Player.Jump.started -= DoJump;
         playerActions.Player.Attack.started -= DoAttack;
+        playerActions.Player.PressButton.started -= DoPressButton;
         playerActions.Player.Disable();
     }
 
@@ -149,5 +151,11 @@ public class OneWheelMovement : MonoBehaviour
     private void DoAttack(InputAction.CallbackContext obj)
     {
         animator.SetTrigger("attack");
+    }
+
+    private void DoPressButton(InputAction.CallbackContext obj)
+    {
+        Debug.Log("Button press");
+        animator.SetTrigger("buttonPress");
     }
 }

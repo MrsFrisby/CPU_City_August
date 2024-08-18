@@ -33,7 +33,7 @@ public class PlayerFootsteps : MonoBehaviour
 
             footstepPlayer.clip = randomClip;
             footstepPlayer.Play();
-            Debug.Log(randomClip.name);
+            //Debug.Log(randomClip.name);
         }
         
     }
