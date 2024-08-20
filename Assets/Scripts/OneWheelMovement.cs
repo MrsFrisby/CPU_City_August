@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class OneWheelMovement : MonoBehaviour
 
@@ -29,6 +30,8 @@ public class OneWheelMovement : MonoBehaviour
     [SerializeField]
     private Camera playerCamera; //to allow character movement relative to camera
     private Animator animator;
+
+    public bool allowMovement = true;
 
     private void Awake()
     {
@@ -59,43 +62,44 @@ public class OneWheelMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // get input from move (relative to the camera)
-
-        float xInput = move.ReadValue<Vector2>().x;
-        float yInput = move.ReadValue<Vector2>().y;
-
-        if (playerActions.Player.Run.ReadValue<float>() <= 0)
+        if(allowMovement)
         {
-            movementForce = 0.4f;
+            // get input from move (relative to the camera)
+            float xInput = move.ReadValue<Vector2>().x;
+            float yInput = move.ReadValue<Vector2>().y;
+
+            if (playerActions.Player.Run.ReadValue<float>() <= 0)
+            {
+                movementForce = 0.4f;
+            }
+            else
+            {
+                movementForce = 1f;
+            }
+
+            forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
+            forceDirection += move.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
+
+            rb.AddForce(forceDirection, ForceMode.Impulse);//accelerate character when moving up to max speed
+            forceDirection = Vector3.zero;
+
+
+
+            //improve gamefeel of jump by making character fall faster
+            if (rb.velocity.y < 0f)
+                rb.velocity -= Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
+
+            //cap horizontal speed 
+            Vector3 horizontalVelocity = rb.velocity;
+            horizontalVelocity.y = 0;
+
+            //check magnitude and inperceptibly slow down when character reaches max velocity to ensure smooth 'braking'
+            if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
+                rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rb.velocity.y;
+
+            LookAt();
         }
-        else
-        {
-            movementForce = 1f;
-        }
-
-        forceDirection += move.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
-        forceDirection += move.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
-
-        rb.AddForce(forceDirection, ForceMode.Impulse);//accelerate character when moving up to max speed
-        forceDirection = Vector3.zero;
-
         
-
-
-
-        //improve gamefeel of jump by making character fall faster
-        if (rb.velocity.y < 0f)
-            rb.velocity -= Vector3.down * Physics.gravity.y * Time.fixedDeltaTime;
-
-        //cap horizontal speed 
-        Vector3 horizontalVelocity = rb.velocity;
-        horizontalVelocity.y = 0;
-
-        //check magnitude and inperceptibly slow down when character reaches max velocity to ensure smooth 'braking'
-        if (horizontalVelocity.sqrMagnitude > maxSpeed * maxSpeed)
-            rb.velocity = horizontalVelocity.normalized * maxSpeed + Vector3.up * rb.velocity.y;
-
-        LookAt();
     }
 
     //ensure that player faces in direction of movement
@@ -132,7 +136,7 @@ public class OneWheelMovement : MonoBehaviour
     //Jump function
     private void DoJump(InputAction.CallbackContext obj)
     {
-        if (IsGrounded())
+        if (IsGrounded() && allowMovement)
         {
             forceDirection += Vector3.up * jumpForce;
         }
@@ -150,6 +154,7 @@ public class OneWheelMovement : MonoBehaviour
 
     private void DoAttack(InputAction.CallbackContext obj)
     {
+        animator.SetInteger("AttackIndex", Random.Range(0, 7));
         animator.SetTrigger("attack");
     }
 
