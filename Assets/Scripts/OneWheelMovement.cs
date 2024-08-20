@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class OneWheelMovement : MonoBehaviour
 
@@ -153,6 +154,7 @@ public class OneWheelMovement : MonoBehaviour
 
     private void DoAttack(InputAction.CallbackContext obj)
     {
+        animator.SetInteger("AttackIndex", Random.Range(0, 7));
         animator.SetTrigger("attack");
     }
 
