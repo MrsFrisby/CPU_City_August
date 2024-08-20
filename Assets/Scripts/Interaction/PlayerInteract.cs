@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Data.Util.KeywordDependentCollection;
 
 public class PlayerInteract : MonoBehaviour
 {
@@ -40,13 +41,12 @@ public class PlayerInteract : MonoBehaviour
             }
             else
             {
-                if(Vector3.Distance(transform.position, npcInteractable.transform.position) < Vector3.Distance(transform.position, closestNPCInteractable.transform.position))
+                if (Vector3.Distance(transform.position, npcInteractable.transform.position) < Vector3.Distance(transform.position, closestNPCInteractable.transform.position))
                 {
                     closestNPCInteractable = npcInteractable;
                 }
             }
         }
-
 
         return closestNPCInteractable;
     }

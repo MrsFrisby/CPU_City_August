@@ -8,18 +8,31 @@ public class NPCInteractable : MonoBehaviour
 
     DialogueTrigger dialogueTrigger;
 
+    public DialogueManager dialogueManager;
+
+    private GameObject container;
+
     private void Start()
     {
+        container = transform.Find("Canvas/PlayerInteractUI/Container")?.gameObject;
         dialogueTrigger = GetComponent<DialogueTrigger>();
     }
 
     public void Interact(){
-        //Debug.Log("Interact!");
-        dialogueTrigger.TriggerDialogue();
+        if (!dialogueManager.inConversation)
+        {
+            dialogueTrigger.StartDialogue();
+        }
+        
     }
 
     public string GetInteractText()
     {
         return interactText;
+    }
+
+    public GameObject GetContainer()
+    {
+        return container;
     }
 }

@@ -4,10 +4,24 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public Message[] messages;
+    public Actor[] actors;
 
-    public void TriggerDialogue()
+    public void StartDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
     }
+}
+
+[System.Serializable]
+public class Message
+{
+    public int actorId;
+    public string message;
+}
+
+[System.Serializable]
+public class Actor
+{
+    public string name;
 }
