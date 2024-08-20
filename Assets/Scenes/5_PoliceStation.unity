@@ -842,6 +842,7 @@ MonoBehaviour:
   jumpForce: 5
   maxSpeed: 5
   playerCamera: {fileID: 1581609213}
+  allowMovement: 1
 --- !u!54 &157175554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5690,6 +5691,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scenery
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944615361373921695, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.787
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b7e5e1533a7c46e69d2640d5d96f756, type: 3}
