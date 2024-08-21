@@ -842,6 +842,7 @@ MonoBehaviour:
   jumpForce: 5
   maxSpeed: 5
   playerCamera: {fileID: 1581609213}
+  allowMovement: 1
 --- !u!54 &157175554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5583,6 +5584,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2600471874069370060, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.341
+      objectReference: {fileID: 0}
     - target: {fileID: 2893929137643497089, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
         type: 3}
       propertyPath: m_Mesh
@@ -5631,6 +5637,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 43817567833397248, guid: c86e9b8538e2fe14a96e9edc81705288,
         type: 2}
+    - target: {fileID: 2937194909386210057, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.961
+      objectReference: {fileID: 0}
     - target: {fileID: 2940166853599118185, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
         type: 3}
       propertyPath: m_RootOrder
@@ -5690,6 +5701,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Scenery
+      objectReference: {fileID: 0}
+    - target: {fileID: 2944615361373921695, guid: 0b7e5e1533a7c46e69d2640d5d96f756,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.787
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b7e5e1533a7c46e69d2640d5d96f756, type: 3}
