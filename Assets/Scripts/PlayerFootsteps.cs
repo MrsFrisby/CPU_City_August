@@ -31,7 +31,7 @@ public class PlayerFootsteps : MonoBehaviour
             int randomIndex = Random.Range(0, streetStepsWalk.Length-1);
             //error here index outside bounds of array
             AudioClip randomClip = streetStepsWalk[randomIndex];
-            Debug.Log("Random Index: "+randomIndex);
+            UnityEngine.Debug.Log("Random Index: "+randomIndex);
             footstepPlayer.clip = randomClip;
             footstepPlayer.Play();
             
