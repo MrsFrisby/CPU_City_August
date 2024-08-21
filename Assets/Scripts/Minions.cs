@@ -50,7 +50,8 @@ public class Minions : MonoBehaviour
         if (!audioSource.isPlaying)
         {
             yield return new WaitForSeconds(Random.Range(1, 20));
-            AudioClip clip = minionSFX[Random.Range(0, minionSFX.Count)];
+            //error here:index was out of range
+            AudioClip clip = minionSFX[Random.Range(0, minionSFX.Count-1)];
             audioSource.PlayOneShot(clip);
             StartCoroutine(PlaySFX());
         }

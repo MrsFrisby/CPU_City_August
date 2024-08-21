@@ -37,8 +37,8 @@ public class DancingBlend : StateMachineBehaviour
                 danceAnimation = danceAnimation * 2 - 1;
 
                 animator.SetFloat("DanceBlend", danceAnimation - 1);
-                Debug.Log("Dance Animation Change");
-                Debug.Log("DanceBlend:" + animator.GetFloat("DanceBlend"));
+                //Debug.Log("Dance Animation Change");
+                //Debug.Log("DanceBlend:" + animator.GetFloat("DanceBlend"));
 
             }
         }
@@ -62,7 +62,7 @@ public class DancingBlend : StateMachineBehaviour
         isIdle = false;
         waitTime = 0;
         
-        Debug.Log("Base Idle Reset");
+        //Debug.Log("Base Idle Reset");
     }
 }
 
