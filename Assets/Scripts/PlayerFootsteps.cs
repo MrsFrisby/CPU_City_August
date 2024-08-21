@@ -29,11 +29,12 @@ public class PlayerFootsteps : MonoBehaviour
         //Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow)
         {
             int randomIndex = Random.Range(0, streetStepsWalk.Length-1);
+            //error here index outside bounds of array
             AudioClip randomClip = streetStepsWalk[randomIndex];
-
+            Debug.Log("Random Index: "+randomIndex);
             footstepPlayer.clip = randomClip;
             footstepPlayer.Play();
-            //Debug.Log(randomClip.name);
+            
         }
         
     }

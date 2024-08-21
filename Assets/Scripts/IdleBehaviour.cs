@@ -37,8 +37,8 @@ public class IdleBehaviour : StateMachineBehaviour
                 idleAnimation = idleAnimation * 2 - 1;
 
                 animator.SetFloat("IdleBlend", idleAnimation - 1);
-                Debug.Log("Idle Animation Change");
-                Debug.Log("IdleBlend:" + animator.GetFloat("IdleBlend"));
+                //Debug.Log("Idle Animation Change");
+                //Debug.Log("IdleBlend:" + animator.GetFloat("IdleBlend"));
 
             }
         }
@@ -62,7 +62,7 @@ public class IdleBehaviour : StateMachineBehaviour
         isExtraIdle = false;
         waitTime = 0;
         
-        Debug.Log("Base Idle Reset");
+        //Debug.Log("Base Idle Reset");
     }
 }
 
