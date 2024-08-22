@@ -1,7 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Data.Util.KeywordDependentCollection;
+
+//using static Data.Util.KeywordDependentCollection;
 
 public class PlayerInteract : MonoBehaviour
 {

@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/14_CongratulationsUI.unity
     guid: e7b118403c74e49f89d038d8a6ba9e2b
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/DoorTest.unity
+    guid: 32cdc1828f24deb468baaee0c29b6b84
   m_configObjects: {}
