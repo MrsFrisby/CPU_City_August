@@ -7,9 +7,9 @@ public class DialogueTrigger : MonoBehaviour
     public Message[] messages;
     public Actor[] actors;
 
-    public void StartDialogue()
+    public void StartDialogue(int questIndex)
     {
-        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
+        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors, questIndex);
     }
 }
 

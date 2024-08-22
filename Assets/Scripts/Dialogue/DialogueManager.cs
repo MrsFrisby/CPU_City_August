@@ -27,6 +27,9 @@ public class DialogueManager : MonoBehaviour
     public float dialogueSpeed;
     private bool startAnimation = true;
 
+    private bool questDialogue;
+    private int givenQuestIndex;
+
     void Start()
     {
         dialogueSpeed = 0.04f;
@@ -68,6 +71,30 @@ public class DialogueManager : MonoBehaviour
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
+        questDialogue = false;
+        currentMessages = messages;
+        currentActors = actors;
+        activeMessage = 0;
+        inConversation = true;
+        playerController.allowMovement = false;
+        freeLookCamera.m_XAxis.m_InputAxisName = "";
+        freeLookCamera.m_YAxis.m_InputAxisName = "";
+
+        DisplayMessage();
+    }
+
+    public void OpenDialogue(Message[] messages, Actor[] actors, int questIndex)
+    {
+        if(questIndex > 0)
+        {
+            givenQuestIndex = questIndex;
+            questDialogue = true;
+        }
+        else
+        {
+            questDialogue = false;
+        }
+        
         currentMessages = messages;
         currentActors = actors;
         activeMessage = 0;
@@ -99,6 +126,11 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            if (questDialogue && (GameManager.Instance.currentQuestIndex == givenQuestIndex - 1))
+            {
+                GameManager.Instance.currentQuestIndex = givenQuestIndex;
+            }
+
             inConversation = false;
             startAnimation = true;
             dialogueAnimator.SetTrigger("Exit");
