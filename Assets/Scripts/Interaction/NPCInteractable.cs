@@ -12,6 +12,8 @@ public class NPCInteractable : MonoBehaviour
 
     private GameObject container;
 
+    public int questIndex;
+
     private void Start()
     {
         container = transform.Find("Canvas/PlayerInteractUI/Container")?.gameObject;
@@ -21,7 +23,7 @@ public class NPCInteractable : MonoBehaviour
     public void Interact(){
         if (!dialogueManager.inConversation)
         {
-            dialogueTrigger.StartDialogue();
+            dialogueTrigger.StartDialogue(questIndex);
         }
         
     }
