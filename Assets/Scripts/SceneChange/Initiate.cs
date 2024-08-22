@@ -11,7 +11,7 @@ public static class Initiate
         if (areWeFading)
         {
             Debug.Log("Already Fading");
-            Debug.Log("Fade:"+scene)
+            Debug.Log("Fade:" + scene);
             return;
         }
 
