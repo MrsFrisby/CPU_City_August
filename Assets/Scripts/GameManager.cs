@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public string[] quests = { "Talk to Copper", "Check in with PC Reg Ister at the Police Station", "All complete dude!" };
     public int currentQuestIndex = 0;
 
-    private float timerDuration = 20f;
+    private float timerDuration = 600f;
     private float timeRemaining;
     private bool timerActive = false;
     private bool timerStarted = false;
