@@ -31,7 +31,13 @@ public class OneWheelMovement : MonoBehaviour
     private Camera playerCamera; //to allow character movement relative to camera
     private Animator animator;
 
+    public GameObject fireBallObject;
+    public Transform fireBallSpawnPoint;
+
     public bool allowMovement = true;
+
+    public AudioSource audioSource;
+    public List<AudioClip> fireballSFX;
 
     private void Awake()
     {
@@ -47,6 +53,7 @@ public class OneWheelMovement : MonoBehaviour
         playerActions.Player.Jump.started += DoJump;
         playerActions.Player.Attack.started += DoAttack;
         playerActions.Player.PressButton.started += DoPressButton;
+        playerActions.Player.PressButton.started += DoAim;
         move = playerActions.Player.Move; 
         playerActions.Player.Enable();
     }
@@ -57,6 +64,7 @@ public class OneWheelMovement : MonoBehaviour
         playerActions.Player.Jump.started -= DoJump;
         playerActions.Player.Attack.started -= DoAttack;
         playerActions.Player.PressButton.started -= DoPressButton;
+        playerActions.Player.PressButton.started -= DoAim;
         playerActions.Player.Disable();
     }
 
@@ -158,9 +166,22 @@ public class OneWheelMovement : MonoBehaviour
         animator.SetTrigger("attack");
     }
 
+    private void DoAim(InputAction.CallbackContext obj)
+    {
+        animator.SetTrigger("aim");
+    }
+
     private void DoPressButton(InputAction.CallbackContext obj)
     {
         Debug.Log("Button press");
         animator.SetTrigger("buttonPress");
+    }
+
+    public void Fire()
+    {
+        Debug.Log("Fire");
+        GameObject fireBall = Instantiate(fireBallObject, fireBallSpawnPoint.position, transform.rotation);
+        fireBall.GetComponent<Rigidbody>().AddForce(transform.forward *25f, ForceMode.Impulse);
+        audioSource.PlayOneShot(fireballSFX[Random.Range(0, fireballSFX.Count)]);
     }
 }
