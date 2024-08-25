@@ -23,7 +23,7 @@ public class PartyMinionPatrolState : StateMachineBehaviour
         foreach (Transform t in gO.transform)
             partyTargets.Add(t);
 
-        agent.SetDestination(partyTargets[Random.Range(0, partyTargets.Count)].position);
+        agent.SetDestination(partyTargets[Random.Range(0, partyTargets.Count-1)].position);
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
     }
@@ -33,7 +33,7 @@ public class PartyMinionPatrolState : StateMachineBehaviour
     {
         if(agent.remainingDistance <= agent.stoppingDistance)
         {
-            agent.SetDestination(partyTargets[Random.Range(0, partyTargets.Count)].position);
+            agent.SetDestination(partyTargets[Random.Range(0, partyTargets.Count-1)].position);
         }
 
         timer += Time.deltaTime;

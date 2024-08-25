@@ -9,16 +9,14 @@ using Vector3 = UnityEngine.Vector3;
 public class PartyMinionAttackState : StateMachineBehaviour
 {
     Transform player;
-    //private List<AudioClip> minionAttackAudio = this.GameObject.GetComponent<PartyMinionDeath>().minionImpactSFX;
+    
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator.SetInteger("AttackIndex", Random.Range(0, 4));
         animator.SetTrigger("attack");
-        AudioSource audioSource = animator.GetComponent<AudioSource>();
-        audioSource.enabled = true;
-        audioSource.Play();
+        
 
 
     }

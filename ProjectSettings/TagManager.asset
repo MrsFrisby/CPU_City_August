@@ -8,6 +8,10 @@ TagManager:
   - DoorOpenTrigger
   - SpikeTargets
   - Minion
+  - GhostTargets
+  - PartyTargets
+  - DistractionTargets
+  - SlimeTargets
   layers:
   - Default
   - TransparentFX
