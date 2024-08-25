@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(AudioSource))]
+//[RequireComponent(typeof(AudioSource))]
 public class MinionsAudio : MonoBehaviour
 {
    
 
-    public List<AudioClip> minionSFX;
-    private AudioSource audioSource;
+    public List<AudioClip> minionPatrolSFX;
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class MinionsAudio : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(1, 20));
             //error here:index was out of range
-            AudioClip clip = minionSFX[Random.Range(0, minionSFX.Count-1)];
+            AudioClip clip = minionPatrolSFX[Random.Range(0, minionPatrolSFX.Count-1)];
             audioSource.PlayOneShot(clip);
             StartCoroutine(PlayMinionSFX());
         }
