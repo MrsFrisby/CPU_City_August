@@ -12,6 +12,11 @@ TagManager:
   - PartyTargets
   - DistractionTargets
   - SlimeTargets
+  - SlimeMinion
+  - GhostMinion
+  - DistractionMinion
+  - PartyMinion
+  - SpikeMinion
   layers:
   - Default
   - TransparentFX
