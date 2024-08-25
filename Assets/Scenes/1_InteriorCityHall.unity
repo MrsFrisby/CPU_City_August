@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: c2d416c39fe38415690007a6da5f082f,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3850,7 +3850,11 @@ MonoBehaviour:
   jumpForce: 5
   maxSpeed: 5
   playerCamera: {fileID: 1581609213}
+  fireBallObject: {fileID: 0}
+  fireBallSpawnPoint: {fileID: 0}
   allowMovement: 1
+  audioSource: {fileID: 0}
+  fireballSFX: []
 --- !u!54 &157175554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6106,7 +6110,7 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 8751cb05161c8d549901627d9fd364de, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: b182cfb21ec5f4bd2863fe478e023941, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8751cb05161c8d549901627d9fd364de, type: 3}
 --- !u!4 &233055771 stripped
