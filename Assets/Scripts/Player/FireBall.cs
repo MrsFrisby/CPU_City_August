@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
-    public int damageAmount = 20;
+    public int damageAmount = 10;
 
     private void Start()
     {
@@ -21,8 +21,32 @@ public class FireBall : MonoBehaviour
             if (other.tag =="SpikeMinion")
             {
                 transform.parent = other.transform;
-                other.GetComponent<SpikeMinionDeath>().TakeDamage(damageAmount);
+                other.GetComponent<SpikeMinionDeath>().TakeDamage(damageAmount*2);
                 
+            }
+            else if (other.tag == "GhostMinion")
+            {
+                transform.parent = other.transform;
+                other.GetComponent<GhostMinionDeath>().TakeDamage(damageAmount);
+
+            }
+            else if (other.tag == "DistractionMinion")
+            {
+                transform.parent = other.transform;
+                other.GetComponent<DistractionMinionDeath>().TakeDamage(damageAmount/2);
+
+            }
+            else if (other.tag == "PartyMinion")
+            {
+                transform.parent = other.transform;
+                other.GetComponent<PartyMinionDeath>().TakeDamage(damageAmount);
+
+            }
+            else if (other.tag == "SlimeMinion")
+            {
+                transform.parent = other.transform;
+                other.GetComponent<SlimeMinionDeath>().TakeDamage(damageAmount*2);
+
             }
 
         }

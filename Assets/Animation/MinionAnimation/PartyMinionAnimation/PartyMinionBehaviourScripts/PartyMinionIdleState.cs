@@ -25,12 +25,14 @@ public class PartyMinionIdleState : StateMachineBehaviour
         if (timer > 3)
         {
             animator.SetBool("isPatrolling", true);
+            animator.SetBool("isIdle", false);
             //Debug.Log("Patrolling");
 
             float distance = Vector3.Distance(player.position, animator.transform.position);
             if(distance < chaseRange)
             {
                 animator.SetBool("isChasing", true);
+                animator.SetBool("isIdle", false);
             }
 
         }
