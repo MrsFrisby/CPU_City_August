@@ -18,10 +18,10 @@ public class FireBall : MonoBehaviour
         {
             Debug.Log(other.name);
             Destroy(transform.GetComponent<Rigidbody>());
-            if (other.tag =="Minion")
+            if (other.tag =="SpikeMinion")
             {
                 transform.parent = other.transform;
-                other.GetComponent<MinionDeath>().TakeDamage(damageAmount);
+                other.GetComponent<SpikeMinionDeath>().TakeDamage(damageAmount);
                 
             }
 
