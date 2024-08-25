@@ -352,7 +352,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21566208}
-  m_LocalRotation: {x: -0.018141448, y: -0.000000029802322, z: -0.000000004656613,
+  m_LocalRotation: {x: -0.018141452, y: 0.000000059604645, z: 0.0000000037252903,
     w: 0.9998355}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1472,6 +1472,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1035066123}
     m_Modifications:
+    - target: {fileID: 172100008393832968, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: m_Drag
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 172100008393832971, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: footstepPlayer
@@ -1569,6 +1574,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4db42eb21904e39bae52e6f80f5e1b, type: 3}
+--- !u!114 &124539381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 124539380}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74421e0335347467888fb6840180a1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &125003725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4429431546133034, guid: 9e9aebb36a880c34787d890288e5d6af,
@@ -2009,7 +2026,11 @@ MonoBehaviour:
   jumpForce: 5
   maxSpeed: 5
   playerCamera: {fileID: 1581609213}
+  fireBallObject: {fileID: 0}
+  fireBallSpawnPoint: {fileID: 0}
   allowMovement: 1
+  audioSource: {fileID: 0}
+  fireballSFX: []
 --- !u!54 &157175554
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3317,8 +3338,8 @@ MonoBehaviour:
   messageText: {fileID: 1351430972}
   backgroundBox: {fileID: 1184970983}
   dialogueAnimator: {fileID: 283424626}
-  playerController: {fileID: 0}
-  freeLookCamera: {fileID: 0}
+  playerController: {fileID: 124539381}
+  freeLookCamera: {fileID: 1581609216}
   inConversation: 0
   dialogueSpeed: 0
 --- !u!1001 &293707928
@@ -3450,7 +3471,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.01818949, y: -0, z: -0, w: 0.9998346}
+  m_LocalRotation: {x: 0.018189494, y: 0.000000029802322, z: 9.313226e-10, w: 0.99983466}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9872,7 +9893,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931775084}
-  m_LocalRotation: {x: -9.313226e-10, y: -0, z: -9.313226e-10, w: 1}
+  m_LocalRotation: {x: 0.0000000018626451, y: 0.000000059604645, z: 0.0000000027939677,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15846,8 +15868,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581609211}
-  m_LocalRotation: {x: -0.015152605, y: -0.55311865, z: -0.010062611, w: 0.8329039}
-  m_LocalPosition: {x: -1.1199669, y: 1.6277474, z: 1.9747316}
+  m_LocalRotation: {x: -0.015152605, y: -0.5531186, z: -0.01006261, w: 0.8329039}
+  m_LocalPosition: {x: -1.119967, y: 1.6277474, z: 1.9747316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 314218868}
