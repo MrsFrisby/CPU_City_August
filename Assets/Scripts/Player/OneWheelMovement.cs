@@ -179,7 +179,7 @@ public class OneWheelMovement : MonoBehaviour
 
     public void Fire()
     {
-        Debug.Log("Fire");
+        //Debug.Log("Fire");
         GameObject fireBall = Instantiate(fireBallObject, fireBallSpawnPoint.position, transform.rotation);
         fireBall.GetComponent<Rigidbody>().AddForce(transform.forward *25f, ForceMode.Impulse);
         audioSource.PlayOneShot(fireballSFX[Random.Range(0, fireballSFX.Count)]);

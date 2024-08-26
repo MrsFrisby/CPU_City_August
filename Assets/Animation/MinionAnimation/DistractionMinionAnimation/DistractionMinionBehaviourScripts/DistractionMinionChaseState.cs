@@ -26,11 +26,13 @@ public class DistractionMinionChaseState : StateMachineBehaviour
         if (distance > 15f)
         {
             animator.SetBool("isChasing", false);
+            Debug.Log("Chasing");
         }
         if (distance < 2f)
         {
-            
+            Debug.Log("Distraction: attacking");
             animator.SetBool("isAttacking", true);
+            Debug.Log("Attacking");
         }
     }
 
