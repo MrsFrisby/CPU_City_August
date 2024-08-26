@@ -25,14 +25,15 @@ public class DistractionMinionIdleState : StateMachineBehaviour
         if (timer > 3)
         {
             animator.SetBool("isPatrolling", true);
-            animator.SetBool("isIdle", false);
-            //Debug.Log("Patrolling");
+            //animator.SetBool("isIdle", false);
+            Debug.Log("Patrolling");
 
             float distance = Vector3.Distance(player.position, animator.transform.position);
             if(distance < chaseRange)
             {
+                Debug.Log("Distraction: Chasing");
                 animator.SetBool("isChasing", true);
-                animator.SetBool("isIdle", false);
+                //animator.SetBool("isIdle", false);
             }
 
         }

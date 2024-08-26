@@ -16,7 +16,8 @@ public class PartyMinionAttackState : StateMachineBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator.SetInteger("AttackIndex", Random.Range(0, 4));
         animator.SetTrigger("attack");
-        
+        Debug.Log("Attack Index" + animator.GetInteger("AttackIndex"));
+
 
 
     }
@@ -38,6 +39,7 @@ public class PartyMinionAttackState : StateMachineBehaviour
             {
                 animator.SetInteger("AttackIndex", Random.Range(0, 4));
                 animator.SetTrigger("attack");
+                Debug.Log("InsideElse: Attack Index" + animator.GetInteger("AttackIndex"));
             }
                 
         }
