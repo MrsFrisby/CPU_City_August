@@ -24,7 +24,7 @@ public class LevelLoader : MonoBehaviour
         if (other.tag == "LevelExit")
         {
             //int sceneNum = SceneManager.GetActiveScene().buildIndex + 1;
-            Initiate.Fade(nextSceneName, loadToColor, 2f);
+            Initiate.Fade(nextSceneName, loadToColor, 0.5f);
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             //Debug.Log("Loading Next Scene");
         }
