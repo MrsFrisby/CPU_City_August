@@ -1074,7 +1074,7 @@ Transform:
   m_GameObject: {fileID: 9186227980906394300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.5576434, y: 0.00000023469329, z: 1.06}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5361614236327822807}
   - {fileID: 8143090928686575869}
@@ -1285,4 +1285,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80f802c3e8b74b199faed5be59b5bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minionPatrolSFX: []
+  minionPatrolSFX:
+  - {fileID: 8300000, guid: 1623f5c33d90c44d98212ee5199cde8e, type: 3}
+  - {fileID: 8300000, guid: 28b26bc3a7fb3400c9db2f81ab25b466, type: 3}
+  - {fileID: 8300000, guid: 9f3e6ba636bfa4e0b8fa2c92f9153dbd, type: 3}
+  - {fileID: 8300000, guid: 11707f053ab1546008a209350252d4f7, type: 3}
+  - {fileID: 8300000, guid: cc83089ca348645f78d0f1bfce5c6044, type: 3}
+  - {fileID: 8300000, guid: c4f53ff058a6b4bfc9b36ae71b404e23, type: 3}
+  - {fileID: 8300000, guid: 62f7d8c6867024620b96e85e738840a1, type: 3}
+  - {fileID: 8300000, guid: 08c6aa8cb40994875a86b742d539b1ee, type: 3}
+  - {fileID: 8300000, guid: 00aa169381c48468e915f90f656c7a49, type: 3}
+  audioSource: {fileID: 2505587797760045556}
