@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject timerObject;
 
-    public string[] quests = { "Talk to Copper", "Check in with PC Reg Ister at the Police Station", "All complete dude!" };
+    public string[] quests = { "Talk to Copper", "Check in with PC Reg Ister at the Police Station", "Talk to Marvin about the pigeon", "Speak to the caretaker at the RAM headquarters", "Collect the pigeon in location 38", "All tasks complete!" };
     public int currentQuestIndex = 0;
 
     private float timerDuration = 600f;

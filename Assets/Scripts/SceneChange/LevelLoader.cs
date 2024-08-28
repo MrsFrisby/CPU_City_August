@@ -21,6 +21,7 @@ public class LevelLoader : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //&& GameManager.Instance.currentQuestIndex == 3
         if (other.tag == "LevelExit")
         {
             //int sceneNum = SceneManager.GetActiveScene().buildIndex + 1;
