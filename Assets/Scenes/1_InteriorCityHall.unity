@@ -6950,11 +6950,22 @@ PrefabInstance:
       propertyPath: m_Drag
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 172100008393832971, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: footstepPlayer
+      value: 
+      objectReference: {fileID: 301404112}
     - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 1581609213}
+    - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: audioMixerGroup
+      value: 
+      objectReference: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+        type: 2}
     - target: {fileID: 172100008393832974, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -7048,6 +7059,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4db42eb21904e39bae52e6f80f5e1b, type: 3}
+--- !u!82 &301404112 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 172100008393832974, guid: df4db42eb21904e39bae52e6f80f5e1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 301404111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &305317500
 GameObject:
   m_ObjectHideFlags: 0
@@ -51350,6 +51367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCfootstepPlayer: {fileID: 1250972035056273}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   tileStepsWalk:
   - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
@@ -51368,7 +51387,8 @@ AudioSource:
   m_GameObject: {fileID: 1250972035056271}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.683
@@ -51487,7 +51507,8 @@ AudioSource:
   m_GameObject: {fileID: 1250972708341339}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.401
@@ -51587,6 +51608,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCfootstepPlayer: {fileID: 1250972708341340}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   tileStepsWalk:
   - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
@@ -67349,6 +67372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCfootstepPlayer: {fileID: 2466842974881243467}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   tileStepsWalk:
   - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
@@ -67367,7 +67392,8 @@ AudioSource:
   m_GameObject: {fileID: 2466842974881243461}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.652

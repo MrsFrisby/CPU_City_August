@@ -6,16 +6,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerFootsteps : MonoBehaviour
 {
-
     public AudioSource footstepPlayer;
 
     //public AudioClip[] tileSteps;
     //public AudioClip[] metalSteps;
     public AudioClip[] streetStepsWalk;
     public AudioClip[] streetStepsRun;
-
-
-
 
     // Start is called before the first frame update
     void Start()
