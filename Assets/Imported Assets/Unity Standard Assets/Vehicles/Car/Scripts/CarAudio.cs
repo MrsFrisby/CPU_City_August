@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using UnityEngine.Audio;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
@@ -21,7 +22,8 @@ namespace UnityStandardAssets.Vehicles.Car
         // highDecelClip : Thenengine at high revs, with throttle at minimum (i.e. engine-braking at very high speed)
 
         // For proper crossfading, the clips pitches should all match, with an octave offset between low and high.
-
+        
+        [SerializeField] private AudioMixerGroup audioMixerGroup; // Reference to the AudioMixerGroup
 
         public enum EngineAudioOptions // Options for the engine audio
         {
@@ -164,6 +166,7 @@ namespace UnityStandardAssets.Vehicles.Car
             source.clip = clip;
             source.volume = 0;
             source.loop = true;
+            source.outputAudioMixerGroup = audioMixerGroup; // Assign to audio mixer group
 
             // start the clip from a random point
             source.time = Random.Range(0f, clip.length);
