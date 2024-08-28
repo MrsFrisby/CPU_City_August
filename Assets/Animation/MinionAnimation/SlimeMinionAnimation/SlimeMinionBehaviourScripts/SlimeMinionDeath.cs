@@ -1,13 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class SlimeMinionDeath : MonoBehaviour
 {
     public int Health = 100;
     public Animator animator;
     public AudioSource audioSource;
+    [SerializeField] private AudioMixerGroup audioMixerGroup; // Reference to the AudioMixerGroup
     public List<AudioClip> minionImpactSFX;
+
+    void Start()
+    {
+        // Ensure the AudioSource uses the AudioMixerGroup
+        if (audioSource != null && audioMixerGroup != null)
+        {
+            audioSource.outputAudioMixerGroup = audioMixerGroup;
+        }
+    }
 
     public void TakeDamage(int damageAmount)
     {

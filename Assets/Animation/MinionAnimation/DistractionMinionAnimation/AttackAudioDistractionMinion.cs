@@ -1,22 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AttackAudioDistractionMinion : MonoBehaviour
 {
-
     public AudioSource attackAudioPlayer;
-
-    
+    [SerializeField] private AudioMixerGroup audioMixerGroup; // Reference to the AudioMixerGroup
     public AudioClip[] attackSounds;
-
-
-
 
     // Start is called before the first frame update
     void Start()
     {
         attackAudioPlayer = GetComponent<AudioSource>();
+        
+        // Set the AudioSource's output to the specified AudioMixerGroup
+        if (attackAudioPlayer != null && audioMixerGroup != null)
+        {
+            attackAudioPlayer.outputAudioMixerGroup = audioMixerGroup;
+        }
     }
 
     private void PlayAttackAudio()
@@ -26,6 +28,4 @@ public class AttackAudioDistractionMinion : MonoBehaviour
             attackAudioPlayer.clip = randomClip;
             attackAudioPlayer.Play();
     }
-
-    
 }

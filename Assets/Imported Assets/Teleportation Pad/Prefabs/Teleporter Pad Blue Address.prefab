@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 8200002}
   - component: {fileID: 8200000}
   m_Layer: 0
-  m_Name: Teleporter Pad A
+  m_Name: Teleporter Pad Blue Address
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4870,7 +4870,8 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 191047cc3db95a741af12a1f8b69fb51, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -4966,7 +4967,8 @@ AudioSource:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c83d290580d9743409e4185fd2e1c647, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4

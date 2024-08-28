@@ -1,13 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PartyMinionDeath : MonoBehaviour
 {
     public int Health = 100;
     public Animator animator;
     public AudioSource audioSource;
+    [SerializeField] private AudioMixerGroup audioMixerGroup; // Reference to the AudioMixerGroup
     public List<AudioClip> minionImpactSFX;
+
+    void Start()
+    {
+        // Ensure the AudioSource uses the AudioMixerGroup
+        if (audioSource != null && audioMixerGroup != null)
+        {
+            audioSource.outputAudioMixerGroup = audioMixerGroup;
+        }
+    }
 
     public void TakeDamage(int damageAmount)
     {
@@ -28,7 +39,6 @@ public class PartyMinionDeath : MonoBehaviour
         }
     }
 
-
     IEnumerator Ressurect(float delay)
     {
         yield return new WaitForSeconds(delay);
@@ -37,6 +47,4 @@ public class PartyMinionDeath : MonoBehaviour
         animator.SetBool("isIdle", true);
         this.gameObject.SetActive(true);
     }
-
-
 }
