@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: a581b5ee993d64d2891e009a4fd8ea82,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2062,7 +2062,8 @@ AudioSource:
   m_GameObject: {fileID: 157175551}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2168,6 +2169,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepPlayer: {fileID: 157175556}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   streetStepsWalk:
   - {fileID: 8300000, guid: 5e265270fb85126479eef52d8fce3b08, type: 3}
   - {fileID: 8300000, guid: 3701a5fdf99882f40bc00eb9053eec92, type: 3}
@@ -5243,7 +5246,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931775084}
-  m_LocalRotation: {x: 0.0000000018626451, y: 0.00000008940697, z: 9.313226e-10, w: 1}
+  m_LocalRotation: {x: -9.3132246e-10, y: -0, z: 9.3132246e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7004,6 +7007,12 @@ PrefabInstance:
       propertyPath: footstepPlayer
       value: 
       objectReference: {fileID: 644381622}
+    - target: {fileID: 172100008393832971, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: audioMixerGroup
+      value: 
+      objectReference: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+        type: 2}
     - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: playerCamera

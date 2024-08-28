@@ -10,9 +10,7 @@ using UnityEngine.InputSystem;
 using Random = UnityEngine.Random;
 
 public class OneWheelMovement : MonoBehaviour
-
 {
-    
     //reference to Input Actions Asset PlayerControl
     private PlayerControl playerActions;
     private InputAction move;

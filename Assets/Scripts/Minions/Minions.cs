@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(NavMeshAgent))]
 [RequireComponent(typeof(AudioSource))]
+
 public class Minions : MonoBehaviour
 {
     private Transform player;
@@ -15,6 +17,7 @@ public class Minions : MonoBehaviour
 
     public List<AudioClip> minionSFX;
     private AudioSource audioSource;
+    [SerializeField] private AudioMixerGroup audioMixerGroup; // Reference to the AudioMixerGroup
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,11 @@ public class Minions : MonoBehaviour
         navAgent = this.GetComponent<NavMeshAgent>();
         //animator = this.GetComponent<Animator>();
         audioSource = this.GetComponent<AudioSource>();
+        // Set the AudioSource's output to the specified AudioMixerGroup
+        if (audioSource != null && audioMixerGroup != null)
+        {
+            audioSource.outputAudioMixerGroup = audioMixerGroup;
+        }
 
         lastPosition = this.transform.position;
         navAgent.speed = Random.Range(0.5f, 1.25f);
