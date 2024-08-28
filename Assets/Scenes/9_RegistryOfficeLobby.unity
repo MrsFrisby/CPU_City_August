@@ -1596,8 +1596,6 @@ MonoBehaviour:
   fireBallSpawnPoint: {fileID: 0}
   allowMovement: 1
   audioSource: {fileID: 0}
-  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
-    type: 2}
   fireballSFX: []
 --- !u!54 &157175554
 Rigidbody:
@@ -1660,8 +1658,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstepPlayer: {fileID: 157175560}
-  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
-    type: 2}
   streetStepsWalk:
   - {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   - {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
@@ -9092,7 +9088,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881305038}
-  m_LocalRotation: {x: -0.022673747, y: -0.000000059604645, z: 0.000000009313226,
+  m_LocalRotation: {x: -0.022673745, y: -0.000000059604645, z: 0.000000011175871,
     w: 0.999743}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -16315,7 +16311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448744811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.73, y: 0, z: -3.35}
+  m_LocalPosition: {x: -7.08, y: 0, z: -3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1014644618}
@@ -18853,7 +18849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633620598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.54, y: 0, z: -3.15}
+  m_LocalPosition: {x: 1.32, y: 0, z: -3.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1014644618}
@@ -23673,7 +23669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930647070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.83, y: 0, z: -3.11}
+  m_LocalPosition: {x: -2.68, y: 0, z: -3.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1014644618}
