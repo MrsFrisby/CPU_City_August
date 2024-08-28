@@ -50,7 +50,7 @@ public class CustomTeleporter : MonoBehaviour
 	void Update ()
 	{
 		//check if theres something/someone inside
-		if(inside)
+		if(inside && GameManager.Instance.currentQuestIndex == 3)
 		{
 			//if that object hasnt just arrived from another pad, teleport it
 			if(!arrived && teleportPadOn)

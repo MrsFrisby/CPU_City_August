@@ -117,10 +117,15 @@ public class OneWheelMovement : MonoBehaviour
 
         //check for movement input and rotate character to face direction of movement
         if (move.ReadValue<Vector2>().sqrMagnitude > 0.1f && direction.sqrMagnitude > 0.1f)
+        {
             this.rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        }
         else
+        {
             //stop character rotating when movement input stops
             rb.angularVelocity = Vector3.zero;
+        }
+            
     }
 
     //allows for camera angle to ensure player movement on horizontal plane
@@ -160,8 +165,11 @@ public class OneWheelMovement : MonoBehaviour
 
     private void DoAttack(InputAction.CallbackContext obj)
     {
-        animator.SetInteger("AttackIndex", Random.Range(0, 7));
-        animator.SetTrigger("attack");
+        if (allowMovement)
+        {
+            animator.SetInteger("AttackIndex", Random.Range(0, 7));
+            animator.SetTrigger("attack");
+        }
     }
 
     private void DoAim(InputAction.CallbackContext obj)
