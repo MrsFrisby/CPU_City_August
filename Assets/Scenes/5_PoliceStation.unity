@@ -2215,6 +2215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: 
   loadToColor: {r: 0, g: 0, b: 0, a: 1}
+  missionIdtoChangeScenes: 0
+  automaticChange: 0
 --- !u!1 &176033401 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9161126893003341161, guid: 1c65e8a4fab2b43bfa131fc58775a00a,
@@ -2274,6 +2276,7 @@ MonoBehaviour:
   interactText: Talk with PC Reg Ister
   dialogueManager: {fileID: 471139604}
   questIndex: 2
+  isCharacter: 1
 --- !u!136 &176033404
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5205,6 +5208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextSceneName: 7_ExteriorBlueBusPCtoRegOffices
   loadToColor: {r: 0.16862746, g: 0.28235295, b: 0.37254903, a: 1}
+  missionIdtoChangeScenes: 0
+  automaticChange: 0
 --- !u!1001 &907179178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7478,6 +7483,16 @@ PrefabInstance:
         type: 3}
       propertyPath: nextSceneName
       value: 6_ExteriorPoliceStationDepart
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: automaticChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: missionIdtoChangeScenes
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4db42eb21904e39bae52e6f80f5e1b, type: 3}

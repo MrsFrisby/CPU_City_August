@@ -15,7 +15,7 @@ public class TriggerPropDoor : MonoBehaviour
     void Start()
     {
         _doorAnimator = GetComponent<Animator>();
-        _doorAnimator.SetTrigger("CloseDoors");
+        _doorAnimator.SetTrigger("CloseDoor");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,7 +24,7 @@ public class TriggerPropDoor : MonoBehaviour
         if(other.CompareTag("Player") && GameManager.Instance.currentQuestIndex == missionID)
         {
             // Trigger the door to open
-            _doorAnimator.SetTrigger("OpenDoors");
+            _doorAnimator.SetTrigger("OpenDoor");
         }
     }
 
@@ -34,7 +34,7 @@ public class TriggerPropDoor : MonoBehaviour
         if (other.CompareTag("Player") && GameManager.Instance.currentQuestIndex == missionID)
         {
             // Trigger the door to close
-            _doorAnimator.SetTrigger("CloseDoors");
+            _doorAnimator.SetTrigger("CloseDoor");
         }
     }
 }

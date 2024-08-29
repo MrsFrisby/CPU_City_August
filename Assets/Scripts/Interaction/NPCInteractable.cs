@@ -14,14 +14,20 @@ public class NPCInteractable : MonoBehaviour
 
     public int questIndex;
 
+    public bool isCharacter;
+
     private void Start()
     {
         container = transform.Find("Canvas/PlayerInteractUI/Container")?.gameObject;
-        dialogueTrigger = GetComponent<DialogueTrigger>();
+        if (isCharacter)
+        {
+            dialogueTrigger = GetComponent<DialogueTrigger>();
+        }
+        
     }
 
     public void Interact(){
-        if (!dialogueManager.inConversation)
+        if (!dialogueManager.inConversation && isCharacter)
         {
             dialogueTrigger.StartDialogue(questIndex);
         }
