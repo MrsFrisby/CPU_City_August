@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: c2d416c39fe38415690007a6da5f082f,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -7372,7 +7372,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.018189505, y: -0, z: -0, w: 0.99983466}
+  m_LocalRotation: {x: 0.01818949, y: 0.000000029802322, z: -0, w: 0.99983466}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -60760,7 +60760,7 @@ Animator:
   m_GameObject: {fileID: 1861291962084198283}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3519873bccb654e73bb52802bbc24f4d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -74652,7 +74652,7 @@ Animator:
   m_GameObject: {fileID: 6553285418833433476}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3519873bccb654e73bb52802bbc24f4d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -76372,7 +76372,7 @@ Animator:
   m_GameObject: {fileID: 7832705637628061761}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 522b0d6ac8e0a457a84bb4d633c4964f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

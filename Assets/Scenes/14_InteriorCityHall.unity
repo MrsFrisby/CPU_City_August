@@ -46680,64 +46680,6 @@ Transform:
   m_Father: {fileID: 1776244181}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1985417321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1985417323}
-  - component: {fileID: 1985417322}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1985417322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985417321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35ce6b85021f041a1be8c660cce2943b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questText: {fileID: 0}
-  timerText: {fileID: 0}
-  timerImage: {fileID: 0}
-  timerObject: {fileID: 0}
-  quests:
-  - Talk to Copper
-  - Check in with PC Reg Ister at the Police Station
-  - Talk to Marvin about the pigeon
-  - Speak to the caretaker at the RAM headquarters
-  - Collect the pigeon in location 38
-  - Talk to Copper
-  - All tasks done!
-  currentQuestIndex: 5
-  startColor: {r: 1, g: 1, b: 1, a: 1}
-  endColor: {r: 1, g: 0, b: 0, a: 1}
---- !u!4 &1985417323
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985417321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985875404
 GameObject:
   m_ObjectHideFlags: 0
@@ -60760,7 +60702,7 @@ Animator:
   m_GameObject: {fileID: 1861291962084198283}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3519873bccb654e73bb52802bbc24f4d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -73030,7 +72972,7 @@ MonoBehaviour:
     message: "Ah, you found it! You\u2019ve got no idea how important this little
       bird is. With this, we can finally decrypt the last of the data."
   - actorId: 0
-    message: "You did well, Rhi. But don\u2019t get too comfortable just yet"
+    message: "You did well, Rhi. But don\u2019t get too comfortable just yet."
   - actorId: 0
     message: "I\u2019ve got a few more jobs lined up for you. Looks like your adventure
       is just getting started."
@@ -74647,7 +74589,7 @@ Animator:
   m_GameObject: {fileID: 6553285418833433476}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3519873bccb654e73bb52802bbc24f4d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -76367,7 +76309,7 @@ Animator:
   m_GameObject: {fileID: 7832705637628061761}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f13349cc09b03d447a26b54d406aaa8e, type: 3}
-  m_Controller: {fileID: 9100000, guid: ca6512bea34a74dc583a25f93d2b6e7e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 522b0d6ac8e0a457a84bb4d633c4964f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
