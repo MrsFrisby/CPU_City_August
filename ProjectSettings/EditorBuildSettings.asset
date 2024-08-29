@@ -48,10 +48,13 @@ EditorBuildSettings:
     path: Assets/Scenes/13_InteriorRAM.unity
     guid: 89dd00c366f4c43729567eaac80ed124
   - enabled: 1
-    path: Assets/Scenes/14_GameOver.unity
+    path: Assets/Scenes/14_InteriorCityHall.unity
+    guid: f2b58fe5c43df4c319fa90f653019799
+  - enabled: 1
+    path: Assets/Scenes/15_Congratulations.unity
     guid: 766d1913d2ac845169b91a9cca1ad936
   - enabled: 1
-    path: Assets/Scenes/14_CongratulationsUI.unity
+    path: Assets/Scenes/99_CongratulationsUI.unity
     guid: e7b118403c74e49f89d038d8a6ba9e2b
   - enabled: 0
     path: Assets/Scenes/TestScenes/DoorTest.unity
