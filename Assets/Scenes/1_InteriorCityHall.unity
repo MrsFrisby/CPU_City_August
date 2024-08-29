@@ -7372,7 +7372,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.01818949, y: 0.000000029802322, z: -0, w: 0.99983466}
+  m_LocalRotation: {x: 0.018189505, y: -0, z: -0, w: 0.99983466}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -38800,6 +38800,18 @@ Transform:
   m_Father: {fileID: 751451421}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1613884069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8219950179403825869, guid: d8cbca6605d034320ae21087dd88cf69,
+    type: 3}
+  m_PrefabInstance: {fileID: 7959597699797711256}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13edd7507a3a477e9116e5f1f215697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1617960150 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4613989284249430, guid: d6e9eedc2c7baeb46ab65cba90d8505b,
@@ -76375,6 +76387,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1717133527}
     m_Modifications:
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1613884069}
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: RestartGameTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8219950179327908656, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}
       propertyPath: m_Pivot.x
@@ -76484,6 +76526,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1613884069}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: RestartGameTimer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cbca6605d034320ae21087dd88cf69, type: 3}

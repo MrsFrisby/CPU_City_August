@@ -121,4 +121,16 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
+
+    // New method to reset the game timer and display quests
+    public void RestartGameTimer()
+    {
+        currentQuestIndex = 0; // Reset quest to the start
+        timerStarted = false;   // Ensure timer hasn't started yet
+        timerActive = false;    // Make sure the timer is inactive
+        timeRemaining = timerDuration; // Reset the timer duration
+        DisplayMainQuests();    // Display the first quest without starting the timer
+
+        Debug.Log("Game has been restarted and the timer is reset!");
+    }
 }

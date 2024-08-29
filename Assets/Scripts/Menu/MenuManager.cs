@@ -65,4 +65,18 @@ public class MenuManager : MonoBehaviour
     {
         Pause();
     }
+
+    public void RestartGameTimer()
+    {
+        // Call the RestartGameTimer method from the GameManager
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.RestartGameTimer();
+            Unpause(); // Unpause the game if it was paused
+        }
+        else
+        {
+            Debug.LogWarning("GameManager restart instance not found!");
+        }
+    }
 }
