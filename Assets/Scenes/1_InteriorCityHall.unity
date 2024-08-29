@@ -7057,6 +7057,21 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: 2_ExteriorCityHall
       objectReference: {fileID: 0}
+    - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: automaticChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: missionIDtoChangeScenes
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: missionIdtoChangeScenes
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df4db42eb21904e39bae52e6f80f5e1b, type: 3}
 --- !u!82 &301404112 stripped
@@ -20765,6 +20780,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 8751cb05161c8d549901627d9fd364de, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b182cfb21ec5f4bd2863fe478e023941, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8751cb05161c8d549901627d9fd364de, type: 3}
 --- !u!1 &885022007
@@ -42862,6 +42881,7 @@ MonoBehaviour:
   interactText: Interact
   dialogueManager: {fileID: 734354420}
   questIndex: -1
+  isCharacter: 1
 --- !u!1 &1792010411
 GameObject:
   m_ObjectHideFlags: 0
@@ -66637,6 +66657,7 @@ MonoBehaviour:
   interactText: Talk
   dialogueManager: {fileID: 734354420}
   questIndex: -1
+  isCharacter: 1
 --- !u!136 &2914378880678140503
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -72978,6 +72999,7 @@ MonoBehaviour:
   interactText: Talk with Copper
   dialogueManager: {fileID: 734354420}
   questIndex: 1
+  isCharacter: 1
 --- !u!114 &6553285418833433479
 MonoBehaviour:
   m_ObjectHideFlags: 0
