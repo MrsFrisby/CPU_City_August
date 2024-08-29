@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject timerObject;
 
-    public string[] quests = { "Talk to Copper", "Check in with PC Reg Ister at the Police Station", "Talk to Marvin about the pigeon", "Speak to the caretaker at the RAM headquarters", "Collect the pigeon in location 38", "All tasks complete!" };
+    public string[] quests = { "Talk to Copper", "Check in with PC Reg Ister at the Police Station", "Talk to Marvin about the pigeon", "Speak to the caretaker at the RAM headquarters", "Collect the pigeon in location 38", "Talk to Copper", "All tasks done!" };
     public int currentQuestIndex = 0;
 
     private float timerDuration = 600f;
@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
 
     public Color startColor = Color.white;
     public Color endColor = Color.red;
+
+    private bool endOfGame = false;
 
     private void Awake()
     {
@@ -44,6 +46,13 @@ public class GameManager : MonoBehaviour
     {
         DisplayMainQuests();
 
+        if(currentQuestIndex == quests.Length - 1 && !Initiate.areWeFading && !endOfGame)
+        {
+            timerActive = false;
+            endOfGame = true;
+            Initiate.Fade("15_Congratulations", new Color(105f / 255f, 131f / 255f, 204f / 255f), 0.5f);
+        }
+
         if(timerActive)
         {
             timerObject.SetActive(true);
@@ -51,7 +60,8 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            timerObject.SetActive(false);
+            if(currentQuestIndex != quests.Length - 1)
+                timerObject.SetActive(false);
         }
     }
 
@@ -109,12 +119,20 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        questText = GameObject.Find("Quest Text").GetComponent<TextMeshProUGUI>();
-        timerText = GameObject.Find("Timer Text").GetComponent<TextMeshProUGUI>();
-        timerImage = GameObject.Find("Timer Bar").GetComponent<Image>();
-        timerObject = GameObject.Find("Timer");
+        if (currentQuestIndex == 4)
+        {
+            currentQuestIndex = 5;
+        }
 
-    DisplayMainQuests();
+        if (currentQuestIndex != quests.Length - 1)
+        {
+            questText = GameObject.Find("Quest Text").GetComponent<TextMeshProUGUI>();
+            timerText = GameObject.Find("Timer Text").GetComponent<TextMeshProUGUI>();
+            timerImage = GameObject.Find("Timer Bar").GetComponent<Image>();
+            timerObject = GameObject.Find("Timer");
+
+            DisplayMainQuests();
+        }     
     }
 
     private void OnDestroy()
@@ -126,6 +144,7 @@ public class GameManager : MonoBehaviour
     public void RestartGameTimer()
     {
         currentQuestIndex = 0; // Reset quest to the start
+        endOfGame = false;
         timerStarted = false;   // Ensure timer hasn't started yet
         timerActive = false;    // Make sure the timer is inactive
         timeRemaining = timerDuration; // Reset the timer duration
