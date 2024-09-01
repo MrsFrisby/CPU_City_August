@@ -1410,6 +1410,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: Car
+      value: 
+      objectReference: {fileID: 1504278020}
+    - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 462492145}
+    - target: {fileID: 11400024, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
+      propertyPath: maxRolloffDistance
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 14600002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 3}
       propertyPath: m_Radius
       value: 0.335
@@ -2060,7 +2072,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858520203}
-  m_LocalRotation: {x: -0.00007053278, y: -0.000000029802319, z: 0.0000000074505797,
+  m_LocalRotation: {x: -0.0000705514, y: 0.000000029802319, z: -0.0000000074505797,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
