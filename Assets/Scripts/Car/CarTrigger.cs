@@ -13,15 +13,20 @@ public class CarTrigger : MonoBehaviour
     [Header("Cameras")]
     public GameObject PlayerCam;
     public GameObject CarCam;
+    public GameObject CarObj;
 
     bool canDrive;
     bool driving;
+
+    private Rigidbody rb;
 
     void Start()
     {
         CarController.enabled = false;
         PlayerCam.gameObject.SetActive(true);
         CarCam.gameObject.SetActive(false);
+
+        rb = CarObj.GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -36,6 +41,8 @@ public class CarTrigger : MonoBehaviour
             // Camera
             PlayerCam.gameObject.SetActive(false);
             CarCam.gameObject.SetActive(true);
+
+            rb.drag = 0;
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -49,6 +56,10 @@ public class CarTrigger : MonoBehaviour
             // Camera
             PlayerCam.gameObject.SetActive(true);
             CarCam.gameObject.SetActive(false);
+
+            // After dismounting set the speed of the car to 0
+            rb.drag = 20;
+
         }
     }
 
