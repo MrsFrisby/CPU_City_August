@@ -238,7 +238,8 @@ AudioSource:
   m_GameObject: {fileID: 4458945185383257123}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -373,6 +374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackAudioPlayer: {fileID: 6819658411242289246}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   attackSounds:
   - {fileID: 8300000, guid: 07b5fbe631d5245ee915910751571055, type: 3}
   - {fileID: 8300000, guid: 24594fab2ad9145cbb5c1a3d296dd7f6, type: 3}
@@ -401,6 +404,8 @@ MonoBehaviour:
   Health: 60
   animator: {fileID: 3539885195027481611}
   audioSource: {fileID: 6819658411242289246}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   minionImpactSFX:
   - {fileID: 8300000, guid: 4f9e53325b09a414fb61deb9b0254c46, type: 3}
   - {fileID: 8300000, guid: f826000f6ac014f9e92be36d464f7b6e, type: 3}
@@ -438,6 +443,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3a6fb31f9f322487f877605fe0e56b1b, type: 3}
   - {fileID: 8300000, guid: 2d5178cc00ea8453884cea45082bc108, type: 3}
   audioSource: {fileID: 6819658411242289246}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
 --- !u!1 &4567044596165296484
 GameObject:
   m_ObjectHideFlags: 0
