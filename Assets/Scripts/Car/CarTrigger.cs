@@ -73,7 +73,7 @@ public class CarTrigger : MonoBehaviour
             Debug.Log("Car trigger engaged");
 
             // Draw a text box
-            carText.text = "Press E to enter car";
+            carText.text = "Press F to drive bus\nPress G to exit";
 
         }
     }
@@ -84,6 +84,7 @@ public class CarTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canDrive = true;
+            
         }
     }
 

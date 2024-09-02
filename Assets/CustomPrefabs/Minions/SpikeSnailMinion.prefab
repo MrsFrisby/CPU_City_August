@@ -1058,6 +1058,7 @@ GameObject:
   - component: {fileID: 730962194435690954}
   - component: {fileID: 730962194435690955}
   - component: {fileID: 7529040460553170242}
+  - component: {fileID: 2943357295400591391}
   m_Layer: 0
   m_Name: SpikeSnailMinion
   m_TagString: Minion
@@ -1125,7 +1126,8 @@ AudioSource:
   m_GameObject: {fileID: 9186227980906394300}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1262,6 +1264,8 @@ MonoBehaviour:
   Health: 100
   animator: {fileID: 2510745614948528764}
   audioSource: {fileID: 2505587797760045556}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
   minionImpactSFX:
   - {fileID: 8300000, guid: 4f9e53325b09a414fb61deb9b0254c46, type: 3}
   - {fileID: 8300000, guid: 695a3d1a6e3d943ffb6dd4e01cd75360, type: 3}
@@ -1296,3 +1300,29 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 08c6aa8cb40994875a86b742d539b1ee, type: 3}
   - {fileID: 8300000, guid: 00aa169381c48468e915f90f656c7a49, type: 3}
   audioSource: {fileID: 2505587797760045556}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
+--- !u!114 &2943357295400591391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9186227980906394300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d79b761570c55437bb9323bc5bb46d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackAudioPlayer: {fileID: 2505587797760045556}
+  audioMixerGroup: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
+    type: 2}
+  attackSounds:
+  - {fileID: 8300000, guid: 2e9604ca166ae4c9db96ab826621f6eb, type: 3}
+  - {fileID: 8300000, guid: 3bf5bd2f166e94839bcb19448102112a, type: 3}
+  - {fileID: 8300000, guid: 0f5cb4b93c3fa4188a05c0cf639e4708, type: 3}
+  - {fileID: 8300000, guid: c34facdb589a042ccb18dde465a97e50, type: 3}
+  - {fileID: 8300000, guid: bf028d9ceb8ea4aeda6b7abea5ec76c8, type: 3}
+  - {fileID: 8300000, guid: e2beeeccf98eb4674b80ce8b53a6ab01, type: 3}
+  - {fileID: 8300000, guid: 7c7f0369550f1488a9ee6588d86b3b98, type: 3}
+  - {fileID: 8300000, guid: 13b7570f0ab6b4f8596d9c86ce7b5c15, type: 3}
