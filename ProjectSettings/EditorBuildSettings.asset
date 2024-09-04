@@ -12,46 +12,46 @@ EditorBuildSettings:
     path: Assets/Scenes/1_InteriorCityHall.unity
     guid: 131dd8bf1381644f1bc01f00ff0550d5
   - enabled: 1
-    path: Assets/Scenes/2_ExteriorCityHall.unity
+    path: Assets/Scenes/UnusedExteriors/2_ExteriorCityHall.unity
     guid: a70b4c7f1093c4a8399d6ef435a1205f
   - enabled: 1
-    path: Assets/Scenes/3_ExtCity_GreenBus_CUtoPC.unity
+    path: Assets/Scenes/UnusedExteriors/3_ExtCity_GreenBus_CUtoPC.unity
     guid: f871856a8eba34d8db056ca7c5325809
   - enabled: 1
-    path: Assets/Scenes/4_ExteriorPoliceStationArrival.unity
+    path: Assets/Scenes/UnusedExteriors/4_ExteriorPoliceStationArrival.unity
     guid: 2dd540b681bda4e36b7ca84490ad9f4d
   - enabled: 1
-    path: Assets/Scenes/5_PoliceStation.unity
+    path: Assets/Scenes/UnusedExteriors/3_PoliceStation.unity
     guid: dd01cdeaf00b14a07b772534a37d8a3d
   - enabled: 1
-    path: Assets/Scenes/6_ExteriorPoliceStationDepart.unity
+    path: Assets/Scenes/UnusedExteriors/6_ExteriorPoliceStationDepart.unity
     guid: b67f7da4373554a78ab789b6c914e8f5
   - enabled: 1
-    path: Assets/Scenes/7_ExteriorBlueBusPCtoRegOffices.unity
+    path: Assets/Scenes/UnusedExteriors/7_ExteriorBlueBusPCtoRegOffices.unity
     guid: 0fdae3844a01445e78fb14708a7de33f
   - enabled: 1
-    path: Assets/Scenes/8_ExteriorRegistryOffice.unity
+    path: Assets/Scenes/UnusedExteriors/8_ExteriorRegistryOffice.unity
     guid: 6657b0dc437a64a89839291c4af7fe7e
   - enabled: 1
-    path: Assets/Scenes/9_RegistryOfficeLobby.unity
+    path: Assets/Scenes/5_RegistryOfficeLobby.unity
     guid: b7aed7a6b6a574684bd568b7724db854
   - enabled: 1
-    path: Assets/Scenes/10_InteriorElevator.unity
+    path: Assets/Scenes/6_InteriorElevator.unity
     guid: a8f4e15d3a01446b5ab883ee19618cc1
   - enabled: 1
-    path: Assets/Scenes/11_MARInteriorTeleport.unity
+    path: Assets/Scenes/7_MARInteriorTeleport.unity
     guid: 107a7d7b395274d559857a142d37decc
   - enabled: 1
-    path: Assets/Scenes/12_RAMTeleportArea.unity
+    path: Assets/Scenes/8_RAMTeleportArea.unity
     guid: c0a620deed56d48f6ba251ed09c2cee1
   - enabled: 1
-    path: Assets/Scenes/13_InteriorRAM.unity
+    path: Assets/Scenes/9_InteriorRAM.unity
     guid: 89dd00c366f4c43729567eaac80ed124
   - enabled: 1
-    path: Assets/Scenes/14_InteriorCityHall.unity
+    path: Assets/Scenes/10_InteriorCityHall.unity
     guid: f2b58fe5c43df4c319fa90f653019799
   - enabled: 1
-    path: Assets/Scenes/15_Congratulations.unity
+    path: Assets/Scenes/11_Congratulations.unity
     guid: 766d1913d2ac845169b91a9cca1ad936
   - enabled: 1
     path: Assets/Scenes/99_CongratulationsUI.unity
