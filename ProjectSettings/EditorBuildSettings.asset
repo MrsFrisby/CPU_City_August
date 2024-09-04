@@ -12,26 +12,14 @@ EditorBuildSettings:
     path: Assets/Scenes/1_InteriorCityHall.unity
     guid: 131dd8bf1381644f1bc01f00ff0550d5
   - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/2_ExteriorCityHall.unity
-    guid: a70b4c7f1093c4a8399d6ef435a1205f
+    path: Assets/Scenes/2_Exterior_Bus_CUtoPC.unity
+    guid: 75b2481a80d424adf942bdff8958fb66
   - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/3_ExtCity_GreenBus_CUtoPC.unity
-    guid: f871856a8eba34d8db056ca7c5325809
+    path: Assets/Scenes/3_PoliceStation.unity
+    guid: 36841aa94b99a4a2b8077d4364103178
   - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/4_ExteriorPoliceStationArrival.unity
-    guid: 2dd540b681bda4e36b7ca84490ad9f4d
-  - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/3_PoliceStation.unity
-    guid: dd01cdeaf00b14a07b772534a37d8a3d
-  - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/6_ExteriorPoliceStationDepart.unity
-    guid: b67f7da4373554a78ab789b6c914e8f5
-  - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/7_ExteriorBlueBusPCtoRegOffices.unity
-    guid: 0fdae3844a01445e78fb14708a7de33f
-  - enabled: 1
-    path: Assets/Scenes/UnusedExteriors/8_ExteriorRegistryOffice.unity
-    guid: 6657b0dc437a64a89839291c4af7fe7e
+    path: Assets/Scenes/4_Exterior_Bus_PCtoMAR.unity
+    guid: 2ad8e96ff43c94a439c12e9b6c8fdf3e
   - enabled: 1
     path: Assets/Scenes/5_RegistryOfficeLobby.unity
     guid: b7aed7a6b6a574684bd568b7724db854
@@ -56,7 +44,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/99_CongratulationsUI.unity
     guid: e7b118403c74e49f89d038d8a6ba9e2b
-  - enabled: 0
-    path: Assets/Scenes/TestScenes/DoorTest.unity
-    guid: 32cdc1828f24deb468baaee0c29b6b84
   m_configObjects: {}
