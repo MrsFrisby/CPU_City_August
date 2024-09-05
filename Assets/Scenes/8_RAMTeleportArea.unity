@@ -2528,7 +2528,7 @@ Transform:
   - {fileID: 1665801554}
   - {fileID: 658682059}
   m_Father: {fileID: 1200691802}
-  m_RootOrder: 44
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &194564637
 GameObject:
@@ -10233,6 +10233,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 8219950179912572574, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cbca6605d034320ae21087dd88cf69, type: 3}
 --- !u!224 &955254956 stripped
@@ -13395,6 +13400,7 @@ Transform:
   - {fileID: 958012757}
   - {fileID: 556511217}
   - {fileID: 318909146}
+  - {fileID: 193127242}
   - {fileID: 16489066}
   - {fileID: 146680283}
   - {fileID: 1975493575}
@@ -13409,7 +13415,6 @@ Transform:
   - {fileID: 685788827}
   - {fileID: 358314087}
   - {fileID: 1629786748}
-  - {fileID: 193127242}
   - {fileID: 181535345}
   - {fileID: 2128711607}
   - {fileID: 1754700782}
