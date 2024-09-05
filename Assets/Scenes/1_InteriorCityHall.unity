@@ -78158,6 +78158,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1717133527}
     m_Modifications:
+    - target: {fileID: 2903761956339968800, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 78e286774545c4fffa3ea21f3a8ed7fe,
+        type: 3}
     - target: {fileID: 8219950179191308369, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

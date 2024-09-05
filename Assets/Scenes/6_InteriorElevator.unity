@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8aac3027bf7104fbaa13e43a71ba46a2,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1575,7 +1575,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.018189492, y: 0.000000029802326, z: -0.000000011175873, w: 0.9998346}
+  m_LocalRotation: {x: 0.018189492, y: 0.000000014901163, z: -0.0000000037252907,
+    w: 0.9998346}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4115,6 +4116,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1482647565}
     m_Modifications:
+    - target: {fileID: 2903761956339968800, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540167f8a449549e4b682747f3e5ff91,
+        type: 3}
     - target: {fileID: 8219950179327908656, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4224,6 +4231,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950180356139432, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cbca6605d034320ae21087dd88cf69, type: 3}
