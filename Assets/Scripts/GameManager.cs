@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -50,7 +51,7 @@ public class GameManager : MonoBehaviour
         {
             timerActive = false;
             endOfGame = true;
-            Initiate.Fade("15_Congratulations", new Color(105f / 255f, 131f / 255f, 204f / 255f), 0.5f);
+            Initiate.Fade("11_Congratulations", new Color(105f / 255f, 131f / 255f, 204f / 255f), 0.5f);
         }
 
         if(timerActive)
@@ -112,10 +113,12 @@ public class GameManager : MonoBehaviour
         timerImage.color = timerColor;
     }
 
-    private void TimerHasEnded()
+     private void TimerHasEnded()
     {
         Debug.Log("Timer has ended!");
+        SceneManager.LoadScene("12_TimesUp"); // Load the "Time's Up" scene when time runs out
     }
+
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -140,7 +143,7 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    // New method to reset the game timer and display quests
+    // Method to reset the game timer and display quests
     public void RestartGameTimer()
     {
         currentQuestIndex = 0; // Reset quest to the start
@@ -153,3 +156,4 @@ public class GameManager : MonoBehaviour
         Debug.Log("Game has been restarted and the timer is reset!");
     }
 }
+
