@@ -74,7 +74,6 @@ public class Fader : MonoBehaviour
                 if (alpha == 1 && !startedLoading)
                 {
                     startedLoading = true;
-                    Debug.Log("Next Scene: " + fadeScene);
                     SceneManager.LoadScene(fadeScene);
                 }
             }

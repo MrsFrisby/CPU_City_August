@@ -7110,7 +7110,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634884134}
-  m_LocalRotation: {x: 0.339824, y: -0.000000031664964, z: 0.000000011350492, w: 0.94048905}
+  m_LocalRotation: {x: 0.339824, y: -0.000000031664964, z: 0.000000012281815, w: 0.94048905}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -8975,7 +8975,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752087064}
-  m_LocalRotation: {x: -0.024852583, y: -0.000000033527613, z: -0.0000000030267984,
+  m_LocalRotation: {x: -0.024852583, y: -0.000000033527613, z: -0.000000003259629,
     w: 0.9996911}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -14379,7 +14379,7 @@ PrefabInstance:
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: nextSceneName
-      value: 10_InteriorElevator
+      value: 6_InteriorElevator
       objectReference: {fileID: 0}
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
@@ -23319,6 +23319,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6,
+        type: 3}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8219950179912572574, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}

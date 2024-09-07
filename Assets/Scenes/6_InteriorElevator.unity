@@ -644,7 +644,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.94, y: 5.96, z: 21.24}
+  m_Size: {x: 8.48, y: 5.96, z: 21.24}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &102719717
 MeshRenderer:
@@ -3601,7 +3601,7 @@ PrefabInstance:
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: nextSceneName
-      value: 11_MARInteriorTeleport
+      value: 7_MARInteriorTeleport
       objectReference: {fileID: 0}
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
