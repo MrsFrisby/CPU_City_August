@@ -69,9 +69,6 @@ public class CarTrigger : MonoBehaviour
         // Check if the collider belongs to the player
         if (other.CompareTag("Player"))
         {
-            // Log character
-            Debug.Log("Car trigger engaged");
-
             // Draw a text box
             carText.text = "Press F to drive bus\nPress G to exit";
 
@@ -93,9 +90,6 @@ public class CarTrigger : MonoBehaviour
         // Check if the collider belongs to the player
         if (other.CompareTag("Player"))
         {
-            // Log character
-            Debug.Log("Car trigger disengaged");
-
             // Disengage the text box
             carText.text = "";
 

@@ -15,7 +15,7 @@ public class TriggerPropDoor : MonoBehaviour
     void Start()
     {
         _doorAnimator = GetComponent<Animator>();
-        _doorAnimator.SetTrigger("CloseDoor");
+        //_doorAnimator.SetTrigger("CloseDoor");
     }
 
     private void OnTriggerEnter(Collider other)

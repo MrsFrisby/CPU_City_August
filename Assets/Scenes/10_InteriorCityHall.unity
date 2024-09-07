@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: c2d416c39fe38415690007a6da5f082f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -614,7 +614,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21566208}
-  m_LocalRotation: {x: -0.01814147, y: -0, z: -0.0000000027939677, w: 0.99983543}
+  m_LocalRotation: {x: -0.018141475, y: 0.000000029802322, z: -0.0000000055879354,
+    w: 0.99983543}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2256,6 +2257,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 107815443}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &109998956 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3957864150084055183, guid: e88123eeb2aa7466485e199ba5a06251,
+    type: 3}
+  m_PrefabInstance: {fileID: 1587363156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 944a80a15fd5a4144be8b9c5791585b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &109998960 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3787039594267012033, guid: e88123eeb2aa7466485e199ba5a06251,
+    type: 3}
+  m_PrefabInstance: {fileID: 1587363156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74421e0335347467888fb6840180a1fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &110085025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7229,7 +7254,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.018189473, y: -0, z: -0, w: 0.9998346}
+  m_LocalRotation: {x: 0.01818947, y: 0.000000044703487, z: -0.000000009313227, w: 0.9998346}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -17485,7 +17510,7 @@ MonoBehaviour:
   messageText: {fileID: 1423258232}
   backgroundBox: {fileID: 2050035845}
   dialogueAnimator: {fileID: 734354421}
-  playerController: {fileID: 172100008153249219}
+  playerController: {fileID: 109998960}
   freeLookCamera: {fileID: 1581609216}
   inConversation: 0
   dialogueSpeed: 0
@@ -21929,7 +21954,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931775084}
-  m_LocalRotation: {x: -0.000000007450581, y: -0, z: -9.313226e-10, w: 1}
+  m_LocalRotation: {x: -0.000000011175871, y: 0.000000029802322, z: -0.000000004656613,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -22201,7 +22227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerGameObject: {fileID: 1799569053}
-  playerInteract: {fileID: 1649176205}
+  playerInteract: {fileID: 109998956}
   interactTextMeshPro: {fileID: 369642613}
   dialogueManager: {fileID: 734354420}
 --- !u!1001 &943352047
@@ -24238,7 +24264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerGameObject: {fileID: 1394034899}
-  playerInteract: {fileID: 1649176205}
+  playerInteract: {fileID: 109998956}
   interactTextMeshPro: {fileID: 1440599831}
   dialogueManager: {fileID: 734354420}
 --- !u!1 &1049977289
@@ -30772,7 +30798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   containerGameObject: {fileID: 1792010411}
-  playerInteract: {fileID: 1649176205}
+  playerInteract: {fileID: 109998956}
   interactTextMeshPro: {fileID: 1536474762}
   dialogueManager: {fileID: 734354420}
 --- !u!1001 &1306013192
@@ -38421,7 +38447,17 @@ PrefabInstance:
     - target: {fileID: 4057511970314457060, guid: e88123eeb2aa7466485e199ba5a06251,
         type: 3}
       propertyPath: m_Name
-      value: RhiVyse_Pigeon
+      value: RhiVyseOrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790051777245457943, guid: e88123eeb2aa7466485e199ba5a06251,
+        type: 3}
+      propertyPath: nextSceneName
+      value: 11_Congratulations
+      objectReference: {fileID: 0}
+    - target: {fileID: 5790051777245457943, guid: e88123eeb2aa7466485e199ba5a06251,
+        type: 3}
+      propertyPath: missionIdtoChangeScenes
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7342224034029932324, guid: e88123eeb2aa7466485e199ba5a06251,
         type: 3}
@@ -39241,18 +39277,6 @@ Transform:
   m_Father: {fileID: 1834579285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1649176205 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3957864150084055183, guid: e88123eeb2aa7466485e199ba5a06251,
-    type: 3}
-  m_PrefabInstance: {fileID: 3957864151666073090}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 944a80a15fd5a4144be8b9c5791585b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1650608426
 GameObject:
   m_ObjectHideFlags: 0
@@ -60355,18 +60379,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5, y: 1.110223e-15, z: 5}
   m_Center: {x: -2.5, y: -5.551115e-16, z: -2.5}
---- !u!114 &172100008153249219 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3787039594267012033, guid: e88123eeb2aa7466485e199ba5a06251,
-    type: 3}
-  m_PrefabInstance: {fileID: 3957864151666073090}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74421e0335347467888fb6840180a1fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!33 &184922768478693895
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67893,7 +67905,7 @@ PrefabInstance:
     - target: {fileID: 4057511970314457060, guid: e88123eeb2aa7466485e199ba5a06251,
         type: 3}
       propertyPath: m_Name
-      value: RhiVyseOrange
+      value: RhiVyseOrangeOld
       objectReference: {fileID: 0}
     - target: {fileID: 4057511970314457060, guid: e88123eeb2aa7466485e199ba5a06251,
         type: 3}
@@ -76611,6 +76623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179403825868, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}

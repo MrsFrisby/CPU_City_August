@@ -16,7 +16,6 @@ public class FireBall : MonoBehaviour
     {
         if (other.tag != "Player")
         {
-            Debug.Log(other.name);
             Destroy(transform.GetComponent<Rigidbody>());
             if (other.tag =="SpikeMinion")
             {

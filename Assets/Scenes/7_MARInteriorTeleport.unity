@@ -3517,7 +3517,7 @@ PrefabInstance:
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: nextSceneName
-      value: 12_RAMTeleportArea
+      value: 8_RAMTeleportArea
       objectReference: {fileID: 0}
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}

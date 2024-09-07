@@ -7055,10 +7055,21 @@ PrefabInstance:
       objectReference: {fileID: 1581609213}
     - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
+      propertyPath: fireBallObject
+      value: 
+      objectReference: {fileID: 1015993815529988969, guid: 642bc22b6e2aa4de49b5b5229104954e,
+        type: 3}
+    - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
       propertyPath: audioMixerGroup
       value: 
       objectReference: {fileID: -1286922205353413076, guid: b36b9b6a746fc4f90a778d076e7b21c5,
         type: 2}
+    - target: {fileID: 172100008393832972, guid: df4db42eb21904e39bae52e6f80f5e1b,
+        type: 3}
+      propertyPath: fireBallSpawnPoint
+      value: 
+      objectReference: {fileID: 301404113}
     - target: {fileID: 172100008393832974, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -7148,7 +7159,7 @@ PrefabInstance:
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
       propertyPath: nextSceneName
-      value: 2_ExteriorCityHall
+      value: 2_Exterior_Bus_CUtoPC
       objectReference: {fileID: 0}
     - target: {fileID: 7401469260522700762, guid: df4db42eb21904e39bae52e6f80f5e1b,
         type: 3}
@@ -7170,6 +7181,12 @@ PrefabInstance:
 --- !u!82 &301404112 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 172100008393832974, guid: df4db42eb21904e39bae52e6f80f5e1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 301404111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &301404113 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5882723777536845543, guid: df4db42eb21904e39bae52e6f80f5e1b,
     type: 3}
   m_PrefabInstance: {fileID: 301404111}
   m_PrefabAsset: {fileID: 0}
@@ -7465,7 +7482,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314218866}
-  m_LocalRotation: {x: 0.01818949, y: 0.000000029802322, z: -0, w: 0.99983466}
+  m_LocalRotation: {x: 0.018189505, y: -0, z: -0, w: 0.99983466}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -45926,7 +45943,7 @@ MonoBehaviour:
   - Check in with PC Reg Ister at the Police Station
   - Talk to Marvin about the pigeon
   - Speak to the caretaker at the RAM headquarters
-  - Collect the pigeon in location 38
+  - Collect pigeon 38
   - Talk to Copper
   - All tasks done!
   currentQuestIndex: 0
@@ -78303,6 +78320,52 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: b51a3e520f9164da198dc59c8acfccd6,
+        type: 3}
+    - target: {fileID: 8219950179542966061, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219950179542966062, guid: d8cbca6605d034320ae21087dd88cf69,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8219950179764489554, guid: d8cbca6605d034320ae21087dd88cf69,
         type: 3}
