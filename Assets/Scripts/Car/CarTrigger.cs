@@ -6,6 +6,7 @@ using TMPro;
 public class CarTrigger : MonoBehaviour
 {
     public TMP_Text carText;
+    public GameObject UISprite;
     public MonoBehaviour CarController;
     public Transform Car;
     public Transform Player;
@@ -25,13 +26,13 @@ public class CarTrigger : MonoBehaviour
         CarController.enabled = false;
         PlayerCam.gameObject.SetActive(true);
         CarCam.gameObject.SetActive(false);
-
+        UISprite.gameObject.SetActive(false);
         rb = CarObj.GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F) && canDrive)
+        if (Input.GetKeyDown(KeyCode.F) && canDrive)
         {
             CarController.enabled = true;
             driving = true;
@@ -41,6 +42,7 @@ public class CarTrigger : MonoBehaviour
             // Camera
             PlayerCam.gameObject.SetActive(false);
             CarCam.gameObject.SetActive(true);
+            UISprite.gameObject.SetActive(false);
 
             rb.drag = 0;
         }
@@ -52,6 +54,7 @@ public class CarTrigger : MonoBehaviour
 
             Player.transform.SetParent(null);
             Player.gameObject.SetActive(true);
+            UISprite.gameObject.SetActive(true);
 
             // Camera
             PlayerCam.gameObject.SetActive(true);
@@ -69,8 +72,9 @@ public class CarTrigger : MonoBehaviour
         // Check if the collider belongs to the player
         if (other.CompareTag("Player"))
         {
+            UISprite.gameObject.SetActive(true);
             // Draw a text box
-            carText.text = "Press F to drive bus\nPress G to exit";
+            carText.text = "PRESS F\nTO DRIVE\nPRESS G\nTO EXIT";
 
         }
     }
@@ -81,7 +85,7 @@ public class CarTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canDrive = true;
-            
+
         }
     }
 
@@ -92,7 +96,7 @@ public class CarTrigger : MonoBehaviour
         {
             // Disengage the text box
             carText.text = "";
-
+            UISprite.gameObject.SetActive(false);
             canDrive = false;
         }
     }
